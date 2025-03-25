@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logos/icon.png">
+    <title>IdeoScrap</title>
+    <meta property="og:site_name" content="quark88.github.io/ideoscrap">
+    <meta property="og:title" content="IdeoScrap">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="What didn't make it to IdeoSorter because it's trash.">
+    <meta property="og:url" content="https://quark88.github.io/ideoscrap">
+    <meta property="og:image" content="https://quark88.github.io/ideoscrap/assets/logos/embed.png">
+    <meta name="theme-color" content="#00a0ff" data-react-helmet="true">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <section id="title">
+        <div class="version"></div>
+        <img src="./assets/logos/title.svg" id="logo">
+        <a class="version" title="🐦" target="_blank" href="https://youtu.be/V-lqGRjhlA0">V1.0.0</a>
+    </section>
+    <section id="home">
+        <h2 class="intro">What didn't make it to <a target="_blank" href="https://quark88.github.io/ideosorter">IdeoSorter</a> because it's trash</h2>
+        <select id="matches">
+            <option>Select result to view...</option>
+        </select>
+        <div id="screenshot" class="screenshot">
+            <h2 id="match" class="match">Ideology</h2>
+            <div id="switchBar">
+                <button class="button switch" id="lSwitch"><img src="./assets/buttons/left.svg"></button>
+                <img id="flag" class="flag">
+                <button class="button switch" id="rSwitch"><img src="./assets/buttons/right.svg"></button>
+            </div>
+            <h2 id="quote" class="quote">Quote</h2>
+            <h2 id="author" class="author">Author</h2>
+        </div>
+    </section>
+    <section id="footer">
+        <h2 id="creator"><a title="Quark on GitHub" target="_blank" href="https://github.com/QUARK88">Quark 2025</a>
+        </h2>
+        <div id="socials">
+            <img title="Quark on Discord" src="./assets/logos/discord.svg" class="socialIcon"
+                onclick="navigator.clipboard.writeText('realquark');confirm('Discord tag copied! (realquark)')">
+            <a target="_blank" href="https://x.com/RenaudBeaulieuQ"><img title="Quark on X" src="./assets/logos/x.svg"
+                    class="socialIcon"></a>
+            <img title="Quark on Tlon" src="./assets/logos/tlon.svg" class="socialIcon"
+                onclick="navigator.clipboard.writeText('~worlyt-nillex');confirm('Urbit ID copied! (~worlyt-nillex)')"
+                </img>
+            <a target="_blank" href="https://www.reddit.com/user/QK_QUARK88"><img title="Quark on Reddit"
+                    src="./assets/logos/reddit.svg" class="socialIcon"></a>
+        </div>
+    </section>
+</body>
+<script src="./script.js">
+</script>
+
+</html>
