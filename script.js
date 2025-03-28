@@ -6,7 +6,7 @@ function getElements() {
     }
     return new Proxy({}, handler)
 }
-const { home, matches, screenshot, match, flag, quote, lSwitch, rSwitch } = getElements()
+const { title, home, matches, screenshot, match, flag, quote, lSwitch, rSwitch } = getElements()
 let ideologies, list
 selectedIdeology = ""
 document.addEventListener("DOMContentLoaded", async function () {
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 }
             })
             r("tree", Object.keys(ideologies)[0])
+            title.scrollIntoView({ behavior: "instant" })
         } catch (error) {
             console.error("Error fetching resources:", error)
         }
